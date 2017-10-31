@@ -40,12 +40,12 @@ There are 2 important points though:
 1. Your component must extend the `foundation/components/parbase` component so it can properly be used inside a sequence channel (which is just a custom parsys).
 0. Your component must use the `parbase` CSS class, and it is recommended to also set your own class for easier styling.
 This is done in `_cq_htmlTag/.content.xml`[[2]]:
-```
-    <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0"
-              xmlns:jcr="http://www.jcp.org/jcr/1.0"
-              xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-              jcr:primaryType="nt:unstructured"
-              class="parbase cq-Screens-myComponent"/>
+```xml
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          class="parbase cq-Screens-myComponent"/>
 ```
 
 
@@ -61,7 +61,7 @@ Since we need a different renderer in _edit_ and in _production_ mode, the main 
 #### Edit renderer
 
 The default markup looks like:
-```
+```html
 <div class="aem-Screens-editWrapper" data-emptytext="${'My Component' @ i18n, locale=request.locale}">
 
 </div>
@@ -73,7 +73,7 @@ The default markup looks like:
 #### Production renderer
 
 The default markup looks like:
-```
+```html
 <div data-duration="${properties.duration}">
 
 </div>
