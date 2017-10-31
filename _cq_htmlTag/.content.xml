@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Lets you define additional CSS classes added to the wrapping <div> of the component -->
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    class="parbase cq-Screens-myComponent"/>
+    <!--
+        "parbase" is important here, so you can properly include the component in your channels.
+        The other class is just a recommentation so you have a dedicated CSS selector for styling.
+    -->
