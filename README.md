@@ -39,7 +39,7 @@ There are 2 important points though:
 
 1. Your component must extend the `foundation/components/parbase` component so it can properly be used inside a sequence channel (which is just a custom parsys).
 0. Your component must use the `parbase` CSS class, and it is recommended to also set your own class for easier styling.
-This is done in `_cq_htmlTag/.content.xml`[2][]:
+This is done in `_cq_htmlTag/.content.xml`[[2]]:
 ```
     <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0"
               xmlns:jcr="http://www.jcp.org/jcr/1.0"
@@ -51,7 +51,7 @@ This is done in `_cq_htmlTag/.content.xml`[2][]:
 
 ### Edit vs. production renderer
 
-Screens components require 2 different renderings depending on which authoring mode[3][] is being used:
+Screens components require 2 different renderings depending on which authoring mode[[3]] is being used:
 
 1. Production: used for preview mode, or when no mode is active (such as on a publish server)
 0. Edit: used for all other authoring modes, such as edit, design, scaffolding, developer, etc.
@@ -67,7 +67,7 @@ The default markup looks like:
 </div>
 ```
 
-- `data-emptytext`[2][]: defines the label for the component when it is not yet configured in the authoring view. If you skip that, you'll just have an empty rectangle in the UI for that component. The empty text makes sure you have at least some textual information in there to be able to properly identify the component.
+- `data-emptytext`[[2]]: defines the label for the component when it is not yet configured in the authoring view. If you skip that, you'll just have an empty rectangle in the UI for that component. The empty text makes sure you have at least some textual information in there to be able to properly identify the component.
 - `aem-Screens-editWrapper`: a suggested CSS class that makes it easier to target the wrapper element in edit mode to apply specific styling.
 
 #### Production renderer
@@ -95,6 +95,10 @@ Since we have different renderers for both edit and production modes, chances ar
 
 Documentation
 -------------
+
+1. https://docs.adobe.com/docs/en/aem/6-3/develop/components.html  
+0. https://docs.adobe.com/docs/en/aem/6-3/develop/components/components-basics.html  
+0. https://docs.adobe.com/docs/en/aem/6-3/author/page-authoring/author-environment-tools.html#Page%20Modes
 
 [1]: https://docs.adobe.com/docs/en/aem/6-3/develop/components.html  
 [2]: https://docs.adobe.com/docs/en/aem/6-3/develop/components/components-basics.html  
