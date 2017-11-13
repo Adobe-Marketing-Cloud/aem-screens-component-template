@@ -3,6 +3,8 @@ AEM Screens component template
 
 This project is meant as a template for customer AEM Screens component development.
 
+Supported versions: 6.3, 6.4
+
 Usage
 -----
 
